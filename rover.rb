@@ -16,6 +16,13 @@ class Rover
   end
 
   def move_left
+      move_orientation_left ={
+      "N" => "O",
+      "O" => "S",
+      "S" => "E",
+      "E" => "N"
+    }
+    @orientation = move_orientation_left[@orientation]
   end
 
   def move_right
