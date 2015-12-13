@@ -53,6 +53,7 @@ MMRMMRMRRM
 ## Summary
 
 This challenge was completed in 3.5 hours. It was quite an experience. Listed below are things I enjoyed.
+
 - Figuring out edge cases.
 - Working the flow of the app.
 - Implementing a scalable design for multiple rovers and plateaus.
@@ -62,6 +63,7 @@ This challenge was completed in 3.5 hours. It was quite an experience. Listed be
 - Commiting often.
 
 Here are some things I would like to improve in my implementation:
+
 - Covering more edge cases for input.
 - Adding more tests and TDD.
 - Make my code more DRY and more object oriented.
