@@ -31,4 +31,10 @@ describe Rover do
       end
     end
 
+    describe '#instructions_hash' do
+      it 'checks #instructions_hash to be a Hash' do
+        expect(new_rover.instructions_hash).to be_kind_of(Hash)
+      end
+    end
+
 end
