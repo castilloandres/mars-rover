@@ -21,11 +21,11 @@ rover1.read_instructions
 rover2.read_instructions
 
 puts "-------------------------------------------------"
-puts "Position [X,Y] and orientation N,S,E,O of Rover 1"
+puts "Position [X,Y] and orientation N,S,E,O of Rover 1:"
 print rover1.position
 p rover1.orientation
 
-puts "Position [X,Y] and orientation N,S,E,O of Rover 2"
+puts "Position [X,Y] and orientation N,S,E,O of Rover 2:"
 print rover2.position
 p rover2.orientation
 puts "-------------------------------------------------"

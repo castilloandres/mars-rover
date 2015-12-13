@@ -46,6 +46,7 @@ class Rover
   def read_instructions
     @instructions.each do |instruction|
        @instructions_hash[instruction].call
+       verify_bounds
     end
   end
 

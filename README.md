@@ -1,0 +1,81 @@
+# XING Interview Challenge
+
+## Learning Competencies
+- Implement Object Oriented Design.
+- Good usage of git.
+- Implement tests.
+- Manipulate Input/Output correctly.
+- Good implementation of logic.
+
+## The challenge
+
+A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
+A rover’s position and location is represented by a combination of x and y co- ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
+In order to control a rover, NASA sends a simple string of letters. The possible letters are ‘L’, ‘R’ and ‘M’. ‘L’ and ‘R’ makes the rover spin 90 degrees left or right respectively, without moving from its current spot. ‘M’ means move forward one grid point, and maintain the same Heading.
+
+Assume that the square directly North from (x, y) is (x, y+1).
+
+##INPUT:
+The first line of input is the upper-right coordinates of the plateau, the lower- left coordinates are assumed to be 0,0. The rest of the input is information pertaining to the rovers that have been deployed. Each rover has two lines of input.The first line gives the rover’s position, and the second line is a series of instructions telling the rover how to explore the plateau. The position is made up of two integers and a letter separated by spaces, corresponding to the x and y co-ordinates and the rover’s orientation. Each rover will be finished sequentially, which means that the second rover won’t start to move until the first one has finished moving.
+
+##OUTPUT
+The output for each rover should be its final co-ordinates and heading.
+
+##INPUT AND OUTPUT
+#Test Input:
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+#Expected Output:
+1 3 N
+5 1 E
+
+## Setup
+
+1. Download Zip or do git clone in CLI
+2. cd into the app thru terminal and open it.
+3. Run the tests first in CLI -> rspec mars_rover_spec.rb
+4. Make sure the tests pass and they all are GREEN.
+5. Run the app in CLI -> ruby runner.rb
+6. Enter the input as the app asks for it. There is a cheat sheet example below you can follow.
+
+## Input Cheat Sheet
+The output for each rover should be its final co-ordinates and heading.
+# INPUT AND OUTPUT
+# Test Input:
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+# Expected Output:
+1 3 N
+5 1 E
+
+## Summary
+
+This challenge was completed in 3.5 hours. It was quite an experience. Listed below are things I enjoyed.
+- Figuring out edge cases.
+- Working the flow of the app.
+- Implementing a scalable design for multiple rovers and plateaus.
+- Challenging myself with time intervals.
+- Implementing tests.
+- Having functional MVP.
+- Commiting often.
+
+Here are some things I would like to improve in my implementation:
+- Covering more edge cases for input.
+- Adding more tests and TDD.
+- Make my code more DRY and more object oriented.
+
+
+##Considerations
+
+
+- The plateau's dimension is taking into cosideration, so if a rover goes out of bounds the app will let you know.
+- The app is implemented for two rovers as requested in the problem.
+
+
+
