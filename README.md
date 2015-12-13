@@ -21,17 +21,6 @@ The first line of input is the upper-right coordinates of the plateau, the lower
 ##OUTPUT
 The output for each rover should be its final co-ordinates and heading.
 
-##INPUT AND OUTPUT
-#Test Input:
-5 5
-1 2 N
-LMLMLMLMM
-3 3 E
-MMRMMRMRRM
-#Expected Output:
-1 3 N
-5 1 E
-
 ## Setup
 
 1. Download Zip or do git clone in CLI
@@ -43,15 +32,22 @@ MMRMMRMRRM
 
 ## Input Cheat Sheet
 The output for each rover should be its final co-ordinates and heading.
-# INPUT AND OUTPUT
 # Test Input:
+
 5 5
+
 1 2 N
+
 LMLMLMLMM
+
 3 3 E
+
 MMRMMRMRRM
+
 # Expected Output:
+
 1 3 N
+
 5 1 E
 
 ## Summary
