@@ -50,5 +50,8 @@ class Rover
   end
 
    def verify_bounds
+    if position[0] > @plateau.width || position[1] > @plateau.height
+        puts "ROVER OUT OF BOUNDS"
+      end
    end
 end
