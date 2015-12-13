@@ -62,3 +62,17 @@ describe Rover do
   end
 
 end
+
+describe Plateau do
+   let(:new_plateau){Plateau.new([5,5])}
+
+    describe '#dimensions' do
+      it 'checks the data type of the width' do
+        expect(new_plateau.height).to be_kind_of(Integer)
+      end
+
+     it 'checks the data type of the height' do
+        expect(new_plateau.width).to be_kind_of(Integer)
+     end
+  end
+end
