@@ -12,3 +12,5 @@ position = gets.chomp.split(" ")
 puts "Please enter the movements of the second Rover"
 instructions = gets.chomp.to_s.split("")
 rover2 = Rover.new(position, instructions, plateau)
+
+
