@@ -53,4 +53,12 @@ describe Rover do
       end
    end
 
+   describe '#move_left' do
+    it 'should change the #orientation of the rover' do
+      old_rover_orientation = new_rover.orientation
+      new_rover.move_left
+      expect(old_rover_orientation).not_to eq(new_rover.orientation)
+    end
+  end
+
 end
