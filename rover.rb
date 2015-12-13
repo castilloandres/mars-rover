@@ -13,6 +13,14 @@ class Rover
   end
 
   def move_forward
+    step_forward ={
+      "N" => [0,1],
+      "O" => [-1,0],
+      "S" => [0,-1],
+      "E" => [1,0]
+    }
+   @position[0] = @position[0] + step_forward[@orientation][0]
+   @position[1] = @position[1] + step_forward[@orientation][1]
   end
 
   def move_left
