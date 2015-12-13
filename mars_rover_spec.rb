@@ -37,4 +37,20 @@ describe Rover do
       end
     end
 
+    # describe '#move_forward' do
+  #   pending 'should change #position' do
+  #     old_position = new_rover.position
+  #     new_rover.move_forward
+  #     expect(old_position).not_to match_array(new_rover.position)
+  #   end
+  # end
+
+    describe '#move_right' do
+      it 'should change the #orientation of the rover' do
+        old_rover_orientation = new_rover.orientation
+        new_rover.move_right
+        expect(old_rover_orientation).not_to eq(new_rover.orientation)
+      end
+   end
+
 end
