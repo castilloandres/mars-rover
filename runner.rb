@@ -1,3 +1,6 @@
+require_relative 'rover'
+require_relative 'plateau'
+
 puts "Welcome to the Official Mars Rover's Controller Nasa Center"
 puts "Please set the width and height dimension of the Plateau"
 plateau_dimensions = gets.chomp.split(" ")
@@ -14,3 +17,15 @@ instructions = gets.chomp.to_s.split("")
 rover2 = Rover.new(position, instructions, plateau)
 
 
+rover1.read_instructions
+rover2.read_instructions
+
+puts "-------------------------------------------------"
+puts "Position [X,Y] and orientation N,S,E,O of Rover 1"
+print rover1.position
+p rover1.orientation
+
+puts "Position [X,Y] and orientation N,S,E,O of Rover 2"
+print rover2.position
+p rover2.orientation
+puts "-------------------------------------------------"
