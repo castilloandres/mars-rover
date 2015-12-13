@@ -13,4 +13,11 @@ describe Rover do
     end
   end
 
+   describe '#rover_orientation' do
+    it 'checks the data type of #orientation' do
+      expect(new_rover.orientation).to be_kind_of(String)
+    end
+  end
+
+
 end
